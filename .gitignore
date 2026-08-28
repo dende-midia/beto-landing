@@ -1,0 +1,11 @@
+data/*.sqlite
+data/*.sqlite-*
+data/dev-credentials.txt
+.env
+node_modules/
+coverage/
+screenshots/
+*.zip
+*.log
+58645362-b1ba-4cef-9f88-4a85225cb23f/
+beto-premium-refinado/

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#061d31">
+  <title>Entrar · BETO ObraFácil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/product/login.css?v=1">
+</head>
+<body>
+  <main class="login-layout">
+    <section class="login-brand" aria-label="BETO ObraFácil">
+      <a href="/" class="login-logo"><img src="/Logo%20Beto%20Obraf%C3%A1cil.png" alt="BETO por ObraFácil"></a>
+      <div class="brand-copy"><span class="eyebrow">SEU TRABALHO, ORGANIZADO</span><h1>Bom ter você<br>de volta.</h1><p>Entre para acompanhar seus clientes, documentos e tudo que o BETO está fazendo por você.</p><ul><li>Atendimento</li><li>Organização</li><li>Documentos</li><li>Acompanhamento</li></ul></div>
+      <img class="login-beto" src="/Beto%204.png" alt="BETO usando o celular">
+    </section>
+    <section class="login-panel">
+      <div class="login-card">
+        <a class="back-link" href="/">← Voltar para o site</a>
+        <span class="mobile-mark">BETO · ObraFácil</span>
+        <h2>Entrar na sua conta</h2>
+        <p class="login-intro">Acesse seu trabalho com segurança.</p>
+        <form id="login-form" novalidate>
+          <label>E-mail<input name="email" type="email" autocomplete="username" placeholder="voce@empresa.com" required></label>
+          <label>Senha<span class="password-wrap"><input name="password" type="password" autocomplete="current-password" placeholder="Sua senha" minlength="10" required><button type="button" id="toggle-password" aria-label="Mostrar senha">Mostrar</button></span></label>
+          <div class="form-error" id="form-error" role="alert" hidden></div>
+          <button class="login-submit" type="submit"><span>Entrar</span><span class="spinner" aria-hidden="true"></span></button>
+        </form>
+        <button class="forgot" type="button" id="forgot">Esqueci minha senha</button>
+        <p class="security-note">Sessão protegida e acesso controlado por conta.</p>
+      </div>
+    </section>
+  </main>
+  <script src="/product/login.js?v=1" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+.activity-filters {
+  display: flex;
+  align-items: end;
+  gap: 12px;
+  margin: 20px 0;
+}
+.activity-filters .period-filter { margin: 0 auto 0 0; }
+.activity-filters label { display: grid; gap: 5px; font-size: 11px; font-weight: 750; color: var(--muted); }
+.activity-filters select { min-width: 170px; height: 40px; border: 1px solid var(--line); border-radius: 8px; background: #fff; color: var(--ink); padding: 0 10px; }
+@media (max-width: 720px) {
+  .activity-filters { align-items: stretch; flex-direction: column; }
+  .activity-filters .period-filter { margin: 0; overflow-x: auto; }
+  .activity-filters select { width: 100%; }
+}

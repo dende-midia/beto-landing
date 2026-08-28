@@ -1,0 +1,9 @@
+.account-logo {
+  width: 66px;
+  height: 66px;
+  object-fit: contain;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  padding: 6px;
+}
