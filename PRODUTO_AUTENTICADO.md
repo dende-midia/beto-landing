@@ -1,5 +1,7 @@
 # BETO / ObraFácil — produto autenticado
 
+> Regra obrigatória de produto: consulte [PRODUCT_POSITIONING.md](PRODUCT_POSITIONING.md). O BETO assiste o profissional de obra e nunca atende diretamente o cliente final.
+
 ## Arquitetura
 
 O projeto original permanece como landing pública estática em `/`. A camada autenticada foi adicionada sem substituir os ativos, o CSS, o JavaScript ou os PDFs existentes.

@@ -77,6 +77,7 @@ body.menu-open { overflow: hidden; }
 .motion-ready .final-layout > img.reveal { transform: translate3d(0, 24px, 0) scale(.97); }
 .motion-ready .hero-conversations.reveal,
 .motion-ready .showcase-beto.reveal,
+.motion-ready .beto-activity.reveal,
 .motion-ready .doc-benefits.reveal,
 .motion-ready .final-layout ul.reveal { transform: translate3d(28px, 0, 0); }
 .motion-ready .reveal.visible { opacity: 1; transform: none; }
@@ -93,7 +94,8 @@ body.menu-open { overflow: hidden; }
 .motion-ready .price-card.annual { --reveal-delay: 180ms; }
 .motion-ready .pillar:nth-child(4) { --reveal-delay: 270ms; }
 .motion-ready .chat-flow.reveal { --reveal-delay: 90ms; }
-.motion-ready .showcase-beto.reveal { --reveal-delay: 180ms; }
+.motion-ready .showcase-beto.reveal,
+.motion-ready .beto-activity.reveal { --reveal-delay: 180ms; }
 .motion-ready .faq .accordion.reveal,
 .motion-ready .final-copy.reveal { --reveal-delay: 100ms; }
 .motion-ready .final-layout ul.reveal { --reveal-delay: 190ms; }
@@ -107,6 +109,7 @@ body.menu-open { overflow: hidden; }
 .motion-ready .trial-strip .trial-pitch,
 .motion-ready .trial-strip .lead-form,
 .motion-ready .accordion details,
+.motion-ready .beto-activity li,
 .motion-ready .final-layout li {
   opacity: 0;
   transform: translate3d(0, 12px, 0);
@@ -121,6 +124,7 @@ body.menu-open { overflow: hidden; }
 .motion-ready .trial-strip.visible .trial-pitch,
 .motion-ready .trial-strip.visible .lead-form,
 .motion-ready .accordion.visible details,
+.motion-ready .beto-activity.visible li,
 .motion-ready .final-layout ul.visible li { opacity: 1; transform: none; }
 .motion-ready .conversation-card:nth-child(2),
 .motion-ready .chat-bubble:nth-child(2),
@@ -128,6 +132,7 @@ body.menu-open { overflow: hidden; }
 .motion-ready .journey-line article:nth-of-type(2),
 .motion-ready .doc-benefits > div:nth-child(2),
 .motion-ready .accordion details:nth-child(2),
+.motion-ready .beto-activity li:nth-child(2),
 .motion-ready .final-layout li:nth-child(2) { transition-delay: 70ms; }
 .motion-ready .conversation-card:nth-child(3),
 .motion-ready .chat-bubble:nth-child(3),
@@ -135,13 +140,16 @@ body.menu-open { overflow: hidden; }
 .motion-ready .journey-line article:nth-of-type(3),
 .motion-ready .doc-benefits > div:nth-child(3),
 .motion-ready .accordion details:nth-child(3),
+.motion-ready .beto-activity li:nth-child(3),
 .motion-ready .final-layout li:nth-child(3) { transition-delay: 140ms; }
 .motion-ready .conversation-card:nth-child(4),
 .motion-ready .chat-bubble:nth-child(4),
 .motion-ready .showcase-copy li:nth-child(4),
 .motion-ready .journey-line article:nth-of-type(4),
 .motion-ready .accordion details:nth-child(4),
+.motion-ready .beto-activity li:nth-child(4),
 .motion-ready .final-layout li:nth-child(4) { transition-delay: 210ms; }
+.motion-ready .beto-activity li:nth-child(5),
 .motion-ready .final-layout li:nth-child(5) { transition-delay: 280ms; }
 .motion-ready .chat-bubble:nth-child(5),
 .motion-ready .journey-line article:nth-of-type(5),
@@ -159,6 +167,7 @@ body.menu-open { overflow: hidden; }
 .capture-mode.motion-ready .trial-strip .trial-pitch,
 .capture-mode.motion-ready .trial-strip .lead-form,
 .capture-mode.motion-ready .accordion details,
+.capture-mode.motion-ready .beto-activity li,
 .capture-mode.motion-ready .final-layout li { opacity: 1 !important; transform: none !important; transition: none !important; }
 .capture-mode.motion-ready .showcase-beto > img,
 .capture-mode.motion-ready .showcase-beto-halo { animation: none !important; }
@@ -403,6 +412,27 @@ body.menu-open { overflow: hidden; }
 .showcase-beto figcaption div { display: flex; flex-direction: column; gap: 2px; }
 .showcase-beto figcaption strong { font-size: 13px; line-height: 1.2; }
 .showcase-beto figcaption small { color: #637283; font-size: 10px; line-height: 1.25; }
+
+.beto-activity { width: min(100%, 330px); min-height: 574px; justify-self: end; overflow: hidden; color: var(--ink); background: rgba(255,255,255,.985); border: 1px solid rgba(255,255,255,.42); border-radius: 24px; box-shadow: 0 28px 72px rgba(0,10,22,.34); }
+.beto-activity header { min-height: 126px; display: flex; align-items: center; gap: 14px; padding: 24px 22px 20px; color: #fff; background: linear-gradient(145deg, #0c466e, #062b4a 72%); border-bottom: 1px solid rgba(255,255,255,.12); }
+.activity-avatar { width: 58px; height: 58px; position: relative; flex: none; padding: 3px; background: #fff; border-radius: 50%; box-shadow: 0 7px 18px rgba(0,0,0,.18); }
+.activity-avatar img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center 18%; border-radius: inherit; }
+.activity-avatar i { width: 13px; height: 13px; position: absolute; right: 0; bottom: 1px; background: #1bc777; border: 3px solid #fff; border-radius: 50%; }
+.beto-activity header small { display: block; margin-bottom: 5px; color: #61e4a5; font-size: 10px; font-weight: 800; letter-spacing: .1em; }
+.beto-activity header h3 { margin: 0; font-size: 20px; line-height: 1.1; letter-spacing: -.025em; }
+.beto-activity header p { margin: 5px 0 0; color: #cbdbe7; font-size: 12px; }
+.beto-activity ul { margin: 0; padding: 0 16px; list-style: none; }
+.beto-activity li { min-height: 78px; display: grid; grid-template-columns: 42px minmax(0,1fr) auto; align-items: center; gap: 11px; border-bottom: 1px solid #e8edf0; }
+.activity-icon { width: 40px; height: 40px; display: grid; place-items: center; padding: 8px; color: var(--navy); background: #f5f8fa; border: 1px solid #e1e8ed; border-radius: 12px; }
+.activity-icon svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.activity-icon .activity-accent { stroke: var(--orange); }
+.beto-activity li div { min-width: 0; }
+.beto-activity li b, .beto-activity li small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.beto-activity li b { margin-bottom: 4px; font-size: 13px; }
+.beto-activity li small { color: #657384; font-size: 11px; }
+.beto-activity li em { align-self: start; margin-top: 20px; color: #8995a2; font-size: 9px; font-style: normal; }
+.beto-activity footer { min-height: 54px; display: flex; align-items: center; justify-content: center; gap: 8px; color: #627184; background: #f7f9fa; font-size: 10px; font-weight: 600; }
+.beto-activity footer span { width: 8px; height: 8px; background: var(--green); border-radius: 50%; box-shadow: 0 0 0 4px rgba(21,154,99,.12); }
 
 .motion-ready .showcase-copy li { transform: translate3d(-14px, 0, 0); transition-duration: .58s; }
 .motion-ready .showcase-copy.visible li:nth-child(1) { transition-delay: 180ms; }

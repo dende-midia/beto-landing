@@ -301,6 +301,16 @@
     bottom: auto;
     left: 8px;
   }
+  .beto-activity {
+    width: min(100%, 390px);
+    min-height: 0;
+    align-self: center;
+    justify-self: center;
+    margin: 0 auto 34px;
+    border-radius: 20px;
+  }
+  .beto-activity header { min-height: 112px; padding: 20px; }
+  .beto-activity li { min-height: 72px; }
 
   .final-cta {
     min-height: 820px;
@@ -568,11 +578,11 @@
   html.motion-ready .chat-flow.visible .chat-bubble:nth-child(4) { transition-delay: 3.5s; }
   html.motion-ready .chat-flow.visible .chat-bubble:nth-child(5) { transition-delay: 4.1s; }
   html.motion-ready .chat-flow .read-ticks { opacity: 0; }
-  html.motion-ready .chat-flow.visible .chat-bubble:nth-child(2) .read-ticks {
-    animation: chatTicksIn .3s ease 1.95s both;
+  html.motion-ready .chat-flow.visible .chat-bubble:nth-child(1) .read-ticks {
+    animation: chatTicksIn .3s ease .72s both;
   }
-  html.motion-ready .chat-flow.visible .chat-bubble:nth-child(4) .read-ticks {
-    animation: chatTicksIn .3s ease 3.95s both;
+  html.motion-ready .chat-flow.visible .chat-bubble:nth-child(3) .read-ticks {
+    animation: chatTicksIn .3s ease 2.72s both;
   }
 
   @keyframes chatTypingCycle {
