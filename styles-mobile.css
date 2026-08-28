@@ -1,6 +1,10 @@
 /* Landing mobile: navegação sólida e hero contida na primeira tela. */
 @media (max-width: 600px) {
-  html { scroll-padding-top: 64px; }
+  html {
+    scroll-padding-top: 64px;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
   .site-header {
     height: 64px;
     background: rgba(3, 27, 49, .985);
@@ -535,4 +539,19 @@
   .hero-conversations .conversation-card:nth-child(2) { top: 57%; }
   .hero-conversations .conversation-card:nth-child(3) { top: 70%; }
   .ready-price { right: -4px; bottom: 124px; }
+}
+
+/* O Safari iOS reporta a altura antes de descontar totalmente suas barras.
+   Mantém nele a mesma composição compacta aprovada no Android. */
+@supports (-webkit-touch-callout: none) {
+  @media (max-width: 600px) {
+    .hero-copy h1 { font-size: 35px; }
+    .hero-beto-wrap { width: 322px; height: 388px; }
+    .hero-beto-wrap > img { width: 320px; height: 418px; }
+    .hero-halo { top: 52px; width: 300px; height: 300px; }
+    .hero-conversations .conversation-card:nth-child(1) { top: 51%; }
+    .hero-conversations .conversation-card:nth-child(2) { top: 59%; }
+    .hero-conversations .conversation-card:nth-child(3) { top: 72%; }
+    .ready-price { right: -4px; bottom: 150px; }
+  }
 }
