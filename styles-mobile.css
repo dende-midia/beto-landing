@@ -301,17 +301,6 @@
     bottom: auto;
     left: 8px;
   }
-  .beto-activity {
-    width: min(100%, 390px);
-    min-height: 0;
-    align-self: center;
-    justify-self: center;
-    margin: 0 auto 34px;
-    border-radius: 20px;
-  }
-  .beto-activity header { min-height: 112px; padding: 20px; }
-  .beto-activity li { min-height: 72px; }
-
   .final-cta {
     min-height: 820px;
     height: 820px;
@@ -566,7 +555,7 @@
     border-radius: 50%;
   }
   html.motion-ready .chat-flow.visible .chat-typing-indicator {
-    animation: chatTypingCycle 4.8s cubic-bezier(.22, 1, .36, 1) both;
+    animation: chatTypingCycle 6s cubic-bezier(.22, 1, .36, 1) both;
   }
   html.motion-ready .chat-flow.visible .chat-typing-indicator i { animation: chatTypingDot .72s ease-in-out infinite; }
   html.motion-ready .chat-flow.visible .chat-typing-indicator i:nth-of-type(2) { animation-delay: .12s; }
@@ -577,6 +566,7 @@
   html.motion-ready .chat-flow.visible .chat-bubble:nth-child(3) { transition-delay: 2.1s; }
   html.motion-ready .chat-flow.visible .chat-bubble:nth-child(4) { transition-delay: 3.5s; }
   html.motion-ready .chat-flow.visible .chat-bubble:nth-child(5) { transition-delay: 4.1s; }
+  html.motion-ready .chat-flow.visible .chat-bubble:nth-child(6) { transition-delay: 5.2s; }
   html.motion-ready .chat-flow .read-ticks { opacity: 0; }
   html.motion-ready .chat-flow.visible .chat-bubble:nth-child(1) .read-ticks {
     animation: chatTicksIn .3s ease .72s both;
@@ -584,10 +574,13 @@
   html.motion-ready .chat-flow.visible .chat-bubble:nth-child(3) .read-ticks {
     animation: chatTicksIn .3s ease 2.72s both;
   }
+  html.motion-ready .chat-flow.visible .chat-bubble:nth-child(5) .read-ticks {
+    animation: chatTicksIn .3s ease 4.72s both;
+  }
 
   @keyframes chatTypingCycle {
-    0%, 10%, 32%, 50%, 73%, 100% { opacity: 0; transform: translate3d(-8px, 6px, 0) scale(.96); }
-    13%, 28%, 53%, 69% { opacity: 1; transform: none; }
+    0%, 10%, 25%, 40%, 58%, 74%, 88%, 100% { opacity: 0; transform: translate3d(-8px, 6px, 0) scale(.96); }
+    12%, 22%, 43%, 55%, 77%, 85% { opacity: 1; transform: none; }
   }
   @keyframes chatTypingDot {
     0%, 60%, 100% { transform: translateY(0); opacity: .45; }
