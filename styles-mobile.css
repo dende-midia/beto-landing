@@ -182,7 +182,7 @@
     position: absolute;
     z-index: 3;
     right: 50%;
-    bottom: -1px;
+    bottom: -78px;
     transform: translateX(50%);
   }
   .hero-beto-wrap > img {
@@ -201,7 +201,7 @@
     width: 164px;
     min-height: 54px;
     right: -4px;
-    bottom: 40px;
+    bottom: 118px;
     left: auto;
     gap: 7px;
     padding: 7px 8px;
@@ -234,9 +234,9 @@
     border-radius: 10px;
     box-shadow: 0 10px 24px rgba(0, 10, 22, .2);
   }
-  .hero-conversations .conversation-card:nth-child(1) { top: 43%; left: -2px; transform: rotate(-1.5deg); }
-  .hero-conversations .conversation-card:nth-child(2) { top: 51%; right: -2px; transform: rotate(1.25deg); }
-  .hero-conversations .conversation-card:nth-child(3) { top: 67%; left: 0; width: 162px; transform: rotate(-1deg); }
+  .hero-conversations .conversation-card:nth-child(1) { top: 48%; left: -2px; transform: rotate(-1.5deg); }
+  .hero-conversations .conversation-card:nth-child(2) { top: 56%; right: -2px; transform: rotate(1.25deg); }
+  .hero-conversations .conversation-card:nth-child(3) { top: 68%; left: 0; width: 162px; transform: rotate(-1deg); }
   .hero-conversations .conversation-card:nth-child(4) { display: none; }
   .hero-conversations .avatar {
     width: 29px;
@@ -531,8 +531,8 @@
   .hero-beto-wrap { width: 322px; height: 388px; }
   .hero-beto-wrap > img { width: 320px; height: 418px; }
   .hero-halo { top: 52px; width: 300px; height: 300px; }
-  .hero-conversations .conversation-card:nth-child(1) { top: 46%; }
-  .hero-conversations .conversation-card:nth-child(2) { top: 54%; }
-  .hero-conversations .conversation-card:nth-child(3) { top: 69%; }
-  .ready-price { right: -4px; bottom: 36px; }
+  .hero-conversations .conversation-card:nth-child(1) { top: 49%; }
+  .hero-conversations .conversation-card:nth-child(2) { top: 57%; }
+  .hero-conversations .conversation-card:nth-child(3) { top: 70%; }
+  .ready-price { right: -4px; bottom: 124px; }
 }
