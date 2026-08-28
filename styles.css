@@ -314,7 +314,9 @@ body.menu-open { overflow: hidden; }
 .ready-price strong { display: block; margin-block: 1px; font-size: 21px; line-height: 1.05; letter-spacing: -.04em; white-space: nowrap; }
 .hero-conversations { z-index: 3; display: grid; gap: 14px; }
 .conversation-card { min-height: 100px; position: relative; display: flex; align-items: flex-start; gap: 14px; padding: 16px; color: var(--ink); background: #fff; border: 1px solid rgba(255,255,255,.6); border-radius: 13px; box-shadow: 0 12px 24px rgba(0,0,0,.14); }
-.conversation-card.success { background: linear-gradient(135deg, #f6fff0, #eaffdf); }
+.conversation-card.request { margin-right: 18px; border-left: 3px solid rgba(255,107,0,.82); }
+.conversation-card.response { margin-left: 18px; background: linear-gradient(135deg, #f3ffec, #e6fbdc); border-color: rgba(122,194,89,.34); }
+.conversation-card.success { background: linear-gradient(135deg, #f0ffe8, #ddf8d1); box-shadow: 0 14px 30px rgba(21,154,99,.13); }
 .avatar { width: 54px; height: 54px; display: block; flex: none; border: 2px solid #fff; border-radius: 50%; background-color: #e6dacd; background-repeat: no-repeat; box-shadow: 0 0 0 1px rgba(3,27,49,.1), 0 2px 6px rgba(3,27,49,.06); }
 .avatar.client { background-image: url('contact-avatars-v1.png'); background-size: 500% 200%; background-position: 0% 10%; }
 .avatar.client.second { background-position: 25% 10%; }
@@ -322,10 +324,17 @@ body.menu-open { overflow: hidden; }
 .avatar.client.fourth { background-position: 75% 10%; }
 .avatar.client.fifth { background-position: 100% 10%; }
 .avatar.beto { background-image: url('Beto%203.png'); background-size: 145%; background-position: 50% 15%; }
+.hero-conversations .avatar.beto { background-image: url('Foto%20perfil%20whatsapp.jpg'); background-size: cover; background-position: center 16%; }
 .conversation-body { width: 100%; min-width: 0; }
 .conversation-meta { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-size: 14px; }
+.conversation-meta b { min-width: 0; }
+.conversation-meta b small { margin-left: 5px; color: #7a8793; font-size: 9px; font-weight: 700; letter-spacing: .02em; text-transform: uppercase; }
+.conversation-card.response .conversation-meta b { color: #087a50; }
+.conversation-card.response .conversation-meta b small { color: #4d7966; }
 .conversation-meta time { color: #6d7783; font-size: 13px; font-weight: 500; }
-.conversation-card p { margin: 6px 30px 0 0; font-size: 15px; line-height: 1.45; }
+.conversation-topic { display: inline-flex; align-items: center; min-height: 19px; margin-top: 5px; padding: 2px 7px; color: #b95100; background: #fff1e6; border-radius: 999px; font-size: 9px; font-weight: 800; letter-spacing: .045em; line-height: 1; text-transform: uppercase; }
+.conversation-card.response .conversation-topic { color: #087a50; background: rgba(21,154,99,.1); }
+.conversation-card p { margin: 5px 30px 0 0; font-size: 15px; line-height: 1.42; }
 .conversation-card p strong { color: #0f8355; }
 .unread-count { width: 22px; height: 22px; position: absolute; right: 15px; bottom: 15px; display: grid; place-items: center; border-radius: 50%; background: var(--green); color: #fff; font-size: 13px; font-weight: 800; }
 .message-state { width: 27px; position: absolute; right: 15px; bottom: 12px; color: #0d94ff; }

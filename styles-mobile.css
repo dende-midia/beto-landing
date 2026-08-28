@@ -237,6 +237,7 @@
     position: absolute;
     gap: 7px;
     padding: 7px 8px;
+    margin: 0;
     border-radius: 10px;
     box-shadow: 0 10px 24px rgba(0, 10, 22, .2);
   }
@@ -250,13 +251,15 @@
     border-width: 1px;
   }
   .hero-conversations .conversation-meta { gap: 4px; font-size: 8px; line-height: 1.1; }
+  .hero-conversations .conversation-meta b small { display: block; margin: 1px 0 0; font-size: 5.5px; }
   .hero-conversations .conversation-meta time { display: none; }
+  .hero-conversations .conversation-topic { min-height: 12px; margin-top: 2px; padding: 1px 5px; font-size: 5.5px; }
   .hero-conversations .conversation-card p {
     display: -webkit-box;
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
-    margin: 3px 0 0;
+    margin: 2px 0 0;
     font-size: 8.5px;
     line-height: 1.25;
   }
